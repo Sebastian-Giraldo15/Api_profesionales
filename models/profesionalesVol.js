@@ -25,7 +25,7 @@ const profecionalesVol_Schema = ({
     },
 
     fecha_registro:{
-        type: Date,
+        type: String,
         required:[true,"La fecha de registro es requerida"]
     },
 })
