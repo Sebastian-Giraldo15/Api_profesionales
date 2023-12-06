@@ -2,7 +2,7 @@ const {Schema, model} = require('mongoose')//Crear una coleccion o acceder a col
 
 const profecionalesVol_Schema = ({
     nombre_profesional:{
-        type: String,
+        type:String,
         unique:true,
         required:[true, 'El nombre es requerido']
     },
@@ -25,8 +25,12 @@ const profecionalesVol_Schema = ({
     },
 
     fecha_registro:{
-        type: String,
+        type:String,
         required:[true,"La fecha de registro es requerida"]
+    },
+    preciodolar:{
+        type:Number,
+        required:[true,"El precio dolar es requerido"]
     },
 })
 
